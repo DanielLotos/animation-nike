@@ -11,7 +11,7 @@
   max-width: 800px;
   margin: 0 auto;
   padding: 85px 80px;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .header {
@@ -19,11 +19,15 @@
   margin-right: 75px;
   &__link {
     display: inline-block;
-  }
-  &__logo {
+    width: 98px;
+    height: 35px;
     margin-bottom: 48px;
   }
+  &__logo {
+    width: 100%;
+  }
   &__title {
+    margin: 0;
     max-width: 175px;
   }
   &__subtitle {
@@ -45,7 +49,7 @@
   display: flex;
   flex-direction: column;
   padding: 30px 25px;
-  border-radius: 5px;
+  border-radius: $borderRadius;
   box-shadow: 0 0 32px rgba(0, 0, 0, 0.097);
   background-color: #ffffff;
   &__title {
@@ -64,6 +68,18 @@
     padding: 10px;
     background-color: rgba($colorLightGrey, 0.32);
     border: none;
-    border-radius: 5px;
+    border-radius: $borderRadius;
+  }
+  &__forgot {
+    display: block;
+    margin-bottom: 15px;
+    text-align: right;
+  }
+  &__btn {
+    width: 100%;
+    padding: 10px 10px;
+    background-color: $colorRed;
+    border: none;
+    border-radius: $borderRadius;
   }
 }

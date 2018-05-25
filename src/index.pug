@@ -4,150 +4,21 @@ html(lang="ru")
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
-    title FICUS
+    title Test page for HR
   body
-    include pug/mixins.pug
+    .wrapper
+      header.header
+        include pug/logo.pug
+        h1.header__title
+          | Welcome to The Nike Analytics
+        p.header__subtitle
+          | To request an account, please contact
+          | the site administrators
+        .header__wrapper
+          a.header__phone(href="tel:+245041660355")
+            | +245 04 166 0355
+          a.header__phone(href="tel:+347423902456")
+            | +347 42 390 2456
+        include pug/social.pug
+      include pug/login-form.pug
 
-    section(class='home')
-      h1.home__title ficus
-      include pug/social.pug
-
-    +section(class='about')
-      .about-us
-        +counter('о нас', '01')
-        h2.about-us__name
-          | ficus production
-        p.about-us__quote
-          | Мы занимаемся созданеим видео любой сложности:
-          | от репортажей до рекламных роликов.
-        p.about-us__text
-          | Снимаем любые виды роликов;
-          | если Вам нужно рекламное видео для Вашей компании, музыкальный клип,
-          | ролик для YouTube, отчет с мероприятия или любое другое видео,
-          | обращайтесь к нам, мы вместе всё обсудим и реализуем Ваши задумки.
-      .steps
-        .steps__container
-          h2.steps__title этапы работы
-          a.steps__link.steps__link--active(href="video.html") видео
-          a.steps__link(href="youtube.com") youtube
-        img.steps__img(src="./src/img/about-prod-bg.png", alt="рисунок ноутбука")
-        p.steps__production продакшен
-        p.steps__text
-          | К своему делу мы подходим основательно:
-          | прорабатываем каждый проект от идеи и до конечного результата.
-          | Работаем с любыми видами фото- и видеотехники;
-          | имеем при себе помощников для съёмок, где они просто необходимы.
-        .steps__slide-selecter
-          button.steps__btn.pxl_icon.pxl_left(type="button")
-          span.steps__num-slide 01
-          button.steps__btn.pxl_icon.pxl_right(type="button")
-
-    +section(class='portfolio')
-      .portfolio__content
-        +counter('портфолио', '02')
-        .portfolio__news
-          .news__video-wrapper
-            img.news__video-prev(src="./src/img/video-prev.jpg" alt="Превью видео")
-            a.news__btn-play.pxl_icon.pxl_play
-          h2.news__title Концерт m83 в Москве
-          p.news__text
-            | Видеотчёт с концерта M83, прошедшего 19 ноября 2016 года в Москве в музее современного
-            | искусства "Гараж". Отличный концерт, превосходная атмосфера, Бюджет "Эконом".
-          .news__arrow-wrapper
-            button.news__btn.pxl_icon.pxl_left(type="button")
-            button.news__btn.pxl_icon.pxl_right(type="button")
-
-      .carousel
-        p.carousel__link-list
-          a.carousel__link.carousel__link--active(href="video.html") видео
-          a.carousel__link(href="youtube.com") youtube
-        .carousel__link-list--tablet
-          +counter('портфолио', '02')
-          p.carousel__link-list
-            a.carousel__link.carousel__link--active(href="video.html") видео
-            a.carousel__link(href="youtube.com") youtube
-        +gallery('./src/img/gall-', '.jpg', 1, 2, 3, 4, 5, 6)
-        .controller
-          .controller__item.controller__item--active
-          .controller__item
-          .controller__item
-          .controller__item
-
-    +section(class='price')
-      .price__wrapper
-        +counter('прайс', '03')
-        p.price__text
-          | Мы занимаемся созданием видео любой сложности: от репортажей до рекламных роликов.
-          | Прорабатываем каждый проект от идеи и до конечного результата. Работаем с любыми видами фото- и видеотехники.
-      +priceItem('эконом', 'от 32 000 ₽')
-      +priceItem('премиум', 'от 64 000 ₽')
-      +partners('./src/img/partner', '.png', 'Magnet', 'Herbert', 'Rick', 'Firstudio', 'Stallion', 'Magnet')
-
-    +section(class='team')
-      .team__wrapper
-        +counter('команда', '04')
-        p.team__text
-          | Мы занимаемся созданием видео любой сложности: от репортажей до рекламных роликов.
-          | Прорабатываем каждый проект от идеи и до конечного результата. Работаем с любыми видами фото- и видеотехники.
-      .person__wrapper
-        ul.person__list
-
-          +person(
-          'Ксения Руденко',
-          'продюссер',
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
-          './src/img/art-Rudenko.png',
-          'Арт Ксении Руденко'
-          )
-
-          +person(
-          'Филипп Валиулин',
-          'режиссер',
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
-          './src/img/art-Valiulin.png',
-          'Арт Филипп Валиулин'
-          )
-
-        .quote
-          p.quote__text
-            | Lorem ipsum dolor sit amet, consectetur elit, sed do eiumod tempor incididunt ut labore et dolore magna aliqua.
-          .quote__footer
-            .quote__wrapper
-              p.quote__author Arthur Hansen
-              p.quote__position CEO / Letters Inc
-            .controller
-              .controller__item.controller__item--active
-              .controller__item
-              .controller__item
-              .controller__item
-
-    +section(class='contacts')
-      .contacts__wrapper
-        +counter('контакты', '05')
-        p.contacts__text
-          | Мы занимаемся созданием видео любой сложности: от репортажей до рекламных роликов.
-          | Прорабатываем каждый проект от идеи и до конечного результата. Работаем с любыми видами фото- и видеотехники.
-      .contacts__content
-        include pug/form.pug
-        .feedback
-          .feedback__wrapper
-            p.feedback__title Мессенджер
-            a.feedback__link.feedback__link--whatsup(href="#") WhatsUp
-            a.feedback__link.feedback__link--telegram(href="#") Telegram
-          .feedback__wrapper
-            p.feedback__title Телефон
-            a.feedback__link.feedback__link--phone(href="tel:014796427461") (01) 479-642-7461
-            a.feedback__link.feedback__link--phone(href="tel:014796427462") (01) 479-642-7462
-          .feedback__wrapper
-            p.feedback__title Email
-            a.feedback__link.feedback__link--email(href="mailto:anderson@hotmail.com") anderson@hotmail.com
-            a.feedback__link.feedback__link--email(href="mailto:hello@hotmail.com") hello@hotmail.com
-
-    footer.main-footer
-      .main-footer__photo--header
-      .main-footer__photo--body
-      .main-footer__photo--footer
-      h2.main-footer__title Ficus production
-      section.footer-menu
-        p.footer__copyright © 2018 Ficus All Rights Reserved
-        include pug/nav.pug

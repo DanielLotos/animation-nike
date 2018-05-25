@@ -1,0 +1,50 @@
+.header {
+  &__title {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  &__subtitle {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  &__phone {
+    color: inherit;
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+
+.social {
+  &__link {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+
+.login-form {
+  &__title {
+    font-size: 24px;
+    line-height: 38px;
+  }
+  &__subtitle {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+.form {
+  &__input {
+    color: #B7B7B7;
+    font-size: 12px;
+    line-height: 100%;
+  }
+  &__forgot {
+    color: $colorRed;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  &__btn {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}

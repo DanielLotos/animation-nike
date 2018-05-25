@@ -4,4 +4,4 @@ package-lock.json
 package.json
 postcss.config.js
 webpack.config.js
-npm-degub.log
+npm-debug.log

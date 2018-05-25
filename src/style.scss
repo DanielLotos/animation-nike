@@ -1,7 +1,69 @@
 @import './scss/global';
 @import './scss/fontStyle';
+@import './scss/social';
 // @import './iconfont/scss/nucleo';
 
 
 // STYLE
 
+.wrapper {
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 85px 80px;
+  align-items: flex-start;
+}
+
+.header {
+  min-width: 273px;
+  margin-right: 75px;
+  &__link {
+    display: inline-block;
+  }
+  &__logo {
+    margin-bottom: 48px;
+  }
+  &__title {
+    max-width: 175px;
+  }
+  &__subtitle {
+    margin-bottom: 15px;
+  }
+  &__wrapper {
+    display: flex;
+    max-width: 65%;
+    margin-bottom: 28px;
+    flex-direction: column;
+  }
+  &__phone {
+    margin-bottom: 10px;
+    border-bottom: 2px solid $colorOrange;
+  }
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 25px;
+  border-radius: 5px;
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.097);
+  background-color: #ffffff;
+  &__title {
+    margin-bottom: 15px;
+  }
+  &__subtitle {
+    margin-bottom: 15px;
+  }
+}
+
+.form {
+  &__input {
+    width: 100%;
+    height: 38px;
+    margin-bottom: 14px;
+    padding: 10px;
+    background-color: rgba($colorLightGrey, 0.32);
+    border: none;
+    border-radius: 5px;
+  }
+}

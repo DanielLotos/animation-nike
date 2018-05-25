@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+$font-fallback: system,
+                -apple-system,
+                '.SFNSText-Regular',
+                'San Francisco',
+                'Roboto',
+                'Segoe UI',
+                'Helvetica Neue',
+                'Lucida Grande',
+                sans-serif;
+
+$fontMontserat: 'Montserrat', $font-fallback;
+
+$colorRed: #DD3C39;
+$colorGrey: #F4F4F4;
+$colorDark: #2B2B2B;
+
+$Light: 200;
+$Regular: 400;
+$Medium: 500;
+$SemiBold: 600;
+$Bold: 700;
+$ExtraBold: 800;
+
+// $paddingContainer: 0 calc(100% / 12 + 20px);
+// $paddingContainerTablet: 0 calc(100% / 8 + 20px);
+
+$phone: 378px;
+$tablet: 1024px;
+$hd1440: 1440px;
+$fullHD: 1920px;

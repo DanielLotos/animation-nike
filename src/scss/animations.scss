@@ -1,0 +1,29 @@
+@keyframes scaling {
+  from {
+    transform: scale(1) rotateY(360deg);
+  }
+  50% {
+    transform: scale(1.2) rotateY(360deg);
+  }
+  75% {
+    transform: scale(1.2) rotateY(180deg);
+  }
+  to {
+    transform: scale(1) rotateY(180deg);
+  }
+}
+
+@keyframes scalingDown {
+  from {
+    transform: scale(1) rotateY(180deg);
+  }
+  50% {
+    transform: scale(1.2) rotateY(180deg);
+  }
+  75% {
+    transform: scale(1.2) rotateY(360deg);
+  }
+  to {
+    transform: scale(1) rotateY(360deg);
+  }
+}

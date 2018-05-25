@@ -1,13 +1,30 @@
-.login-form
-  h2.login-form__title
-    | Login
-  p.login-form__subtitle
-    | This is a secure system and you will need
-    | to provide your login details to access the site
-  form.form
-    input(type="text" placeholder="User name").form__input
-    input(type="password" placeholder="Password").form__input
-    a(href="#").form__forgot
-      | Forgot password?
-    button(type="submit" value="Log in").form__btn
-      | Log in
+.login-form__wrapper
+  .login-form__flipper
+    .login-form.login-form--login
+      h2.login-form__title
+        | Login
+      p.login-form__subtitle
+        | This is a secure system and you will need
+        | to provide your login details to access the site
+      form.form
+        input(type="text" placeholder="User name").form__input
+        input(type="password" placeholder="Password").form__input
+        a(href="#").form__forgot.form__forgot--login
+          | Forgot password?
+        button(type="submit" value="Log in").form__btn
+          | Log in
+
+    .login-form.login-form--reset
+      h2.login-form__title
+        | Reset password
+      p.login-form__subtitle
+        | Please enter your credentials first.
+        | Won't be shared publicy,
+        | won't be spammed.
+      form.form
+        input(type="text" placeholder="User name").form__input
+        input(type="email" placeholder="Email address").form__input
+        button(type="submit" value="Reset password").form__btn.form__btn--reset
+          | Reset password
+        a(href="#").form__forgot.form__forgot--reset
+          | Back to log-in page

@@ -1,10 +1,7 @@
 @import './scss/global';
 @import './scss/fontStyle';
 @import './scss/social';
-// @import './iconfont/scss/nucleo';
-
-
-// STYLE
+@import './scss/animations';
 
 body {
   display: flex;
@@ -20,6 +17,7 @@ body {
   align-items: center;
 }
 
+//header block (left column)
 .header {
   min-width: 273px;
   margin-right: 75px;
@@ -34,7 +32,7 @@ body {
   }
   &__title {
     margin: 0;
-    max-width: 175px;
+    max-width: 169px;
   }
   &__subtitle {
     margin-bottom: 15px;
@@ -50,6 +48,29 @@ body {
     border-bottom: 2px solid $colorOrange;
   }
 }
+//end header
+
+//login or reset password block (right column)
+
+.login-form__wrapper {
+  perspective: 1000px;
+}
+
+.login-form__flipper {
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateY(360deg);
+  //animation login to reset password
+  &--flip {
+    animation: scaling 2s forwards;
+    animation-iteration-count: 1;
+  }
+  //animation reset password to login form
+  &--unflip {
+    animation: scalingDown 2s forwards;
+    animation-iteration-count: 1;
+  }
+}
 
 .login-form {
   display: flex;
@@ -58,11 +79,23 @@ body {
   border-radius: $borderRadius;
   box-shadow: 0 0 32px rgba(0, 0, 0, 0.097);
   background-color: #ffffff;
+  backface-visibility: hidden;
   &__title {
     margin-bottom: 15px;
   }
   &__subtitle {
     margin-bottom: 15px;
+  }
+  //login form default rotate (fix backface)
+  &--login {
+    transform: rotateY(0deg);
+  }
+  //reset password block position
+  &--reset {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg);
   }
 }
 
@@ -80,6 +113,11 @@ body {
     display: block;
     margin-bottom: 15px;
     text-align: right;
+    &--reset {
+      display: block;
+      text-align: center;
+      margin: 0;
+    }
   }
   &__btn {
     width: 100%;
@@ -87,5 +125,8 @@ body {
     background-color: $colorRed;
     border: none;
     border-radius: $borderRadius;
+    &--reset {
+      margin-bottom: 15px;
+    }
   }
 }

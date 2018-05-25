@@ -6,6 +6,12 @@
 
 // STYLE
 
+body {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
 .wrapper {
   display: flex;
   max-width: 800px;

@@ -440,11 +440,11 @@ button {
     -webkit-transform: scale(1) rotateY(360deg);
             transform: scale(1) rotateY(360deg); }
   50% {
-    -webkit-transform: scale(1.2) rotateY(360deg);
-            transform: scale(1.2) rotateY(360deg); }
+    -webkit-transform: scale(1.15) rotateY(360deg);
+            transform: scale(1.15) rotateY(360deg); }
   75% {
-    -webkit-transform: scale(1.2) rotateY(180deg);
-            transform: scale(1.2) rotateY(180deg); }
+    -webkit-transform: scale(1.15) rotateY(180deg);
+            transform: scale(1.15) rotateY(180deg); }
   to {
     -webkit-transform: scale(1) rotateY(180deg);
             transform: scale(1) rotateY(180deg); } }
@@ -454,11 +454,11 @@ button {
     -webkit-transform: scale(1) rotateY(360deg);
             transform: scale(1) rotateY(360deg); }
   50% {
-    -webkit-transform: scale(1.2) rotateY(360deg);
-            transform: scale(1.2) rotateY(360deg); }
+    -webkit-transform: scale(1.15) rotateY(360deg);
+            transform: scale(1.15) rotateY(360deg); }
   75% {
-    -webkit-transform: scale(1.2) rotateY(180deg);
-            transform: scale(1.2) rotateY(180deg); }
+    -webkit-transform: scale(1.15) rotateY(180deg);
+            transform: scale(1.15) rotateY(180deg); }
   to {
     -webkit-transform: scale(1) rotateY(180deg);
             transform: scale(1) rotateY(180deg); } }
@@ -468,11 +468,11 @@ button {
     -webkit-transform: scale(1) rotateY(180deg);
             transform: scale(1) rotateY(180deg); }
   50% {
-    -webkit-transform: scale(1.2) rotateY(180deg);
-            transform: scale(1.2) rotateY(180deg); }
+    -webkit-transform: scale(1.15) rotateY(180deg);
+            transform: scale(1.15) rotateY(180deg); }
   75% {
-    -webkit-transform: scale(1.2) rotateY(360deg);
-            transform: scale(1.2) rotateY(360deg); }
+    -webkit-transform: scale(1.15) rotateY(360deg);
+            transform: scale(1.15) rotateY(360deg); }
   to {
     -webkit-transform: scale(1) rotateY(360deg);
             transform: scale(1) rotateY(360deg); } }
@@ -482,11 +482,11 @@ button {
     -webkit-transform: scale(1) rotateY(180deg);
             transform: scale(1) rotateY(180deg); }
   50% {
-    -webkit-transform: scale(1.2) rotateY(180deg);
-            transform: scale(1.2) rotateY(180deg); }
+    -webkit-transform: scale(1.15) rotateY(180deg);
+            transform: scale(1.15) rotateY(180deg); }
   75% {
-    -webkit-transform: scale(1.2) rotateY(360deg);
-            transform: scale(1.2) rotateY(360deg); }
+    -webkit-transform: scale(1.15) rotateY(360deg);
+            transform: scale(1.15) rotateY(360deg); }
   to {
     -webkit-transform: scale(1) rotateY(360deg);
             transform: scale(1) rotateY(360deg); } }

@@ -6,6 +6,10 @@
 }
 .social__link {
   margin: 0 7px;
+  opacity: 0.9;
+  &:hover {
+    opacity: 1;
+  }
   svg {
     path {
       fill: $colorDark;

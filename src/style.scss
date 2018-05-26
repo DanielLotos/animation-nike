@@ -66,12 +66,16 @@ body {
   &__phone {
     margin-bottom: 10px;
     border-bottom: 2px solid $colorOrange;
+    opacity: 0.9;
+    &:hover {
+      opacity: 1;
+    }
   }
 }
 //end header
 
 //login and reset password block (right column)
-.login-form__wrapper {
+.form {
   perspective: 1000px;
   @include screen-style(phone) {
     width: 100%;
@@ -84,12 +88,12 @@ body {
   transform: rotateY(360deg);
   //animation login to reset password
   &--flip {
-    animation: scaling 2s forwards;
+    animation: scaling 1.5s forwards;
     animation-iteration-count: 1;
   }
   //animation reset password to login form
   &--unflip {
-    animation: scalingDown 2s forwards;
+    animation: scalingDown 1.5s forwards;
     animation-iteration-count: 1;
   }
 }
@@ -118,6 +122,9 @@ body {
     top: 0;
     left: 0;
     transform: rotateY(180deg);
+    @include screen-style(phone) {
+      width: 100%;
+    };
   }
 }
 
@@ -147,6 +154,10 @@ body {
     background-color: $colorRed;
     border: none;
     border-radius: $borderRadius;
+    opacity: 0.9;
+    &:hover {
+      opacity: 1;
+    }
     &--reset {
       margin-bottom: 15px;
     }

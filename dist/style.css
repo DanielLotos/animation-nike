@@ -428,7 +428,10 @@ button {
     margin-bottom: 4vmin; } }
 
 .social__link {
-  margin: 0 7px; }
+  margin: 0 7px;
+  opacity: 0.9; }
+  .social__link:hover {
+    opacity: 1; }
   .social__link svg path {
     fill: #2B2B2B; }
 
@@ -527,8 +530,8 @@ button {
     .icons {
       display: none; } }
   .icons--scale {
-    -webkit-animation: iconScale 2s forwards;
-            animation: iconScale 2s forwards;
+    -webkit-animation: iconScale 1.5s forwards;
+            animation: iconScale 1.5s forwards;
     -webkit-animation-iteration-count: 1;
             animation-iteration-count: 1; }
   .icons svg {
@@ -722,13 +725,16 @@ body {
         margin: 0 auto; } }
   .header__phone {
     margin-bottom: 10px;
-    border-bottom: 2px solid #F5A623; }
+    border-bottom: 2px solid #F5A623;
+    opacity: 0.9; }
+    .header__phone:hover {
+      opacity: 1; }
 
-.login-form__wrapper {
+.form {
   -webkit-perspective: 1000px;
           perspective: 1000px; }
   @media only screen and (min-width: 320px) and (max-width: 799px) {
-    .login-form__wrapper {
+    .form {
       width: 100%; } }
 
 .login-form__flipper {
@@ -738,13 +744,13 @@ body {
   -webkit-transform: rotateY(360deg);
           transform: rotateY(360deg); }
   .login-form__flipper--flip {
-    -webkit-animation: scaling 2s forwards;
-            animation: scaling 2s forwards;
+    -webkit-animation: scaling 1.5s forwards;
+            animation: scaling 1.5s forwards;
     -webkit-animation-iteration-count: 1;
             animation-iteration-count: 1; }
   .login-form__flipper--unflip {
-    -webkit-animation: scalingDown 2s forwards;
-            animation: scalingDown 2s forwards;
+    -webkit-animation: scalingDown 1.5s forwards;
+            animation: scalingDown 1.5s forwards;
     -webkit-animation-iteration-count: 1;
             animation-iteration-count: 1; }
 
@@ -776,6 +782,9 @@ body {
     left: 0;
     -webkit-transform: rotateY(180deg);
             transform: rotateY(180deg); }
+    @media only screen and (min-width: 320px) and (max-width: 799px) {
+      .login-form--reset {
+        width: 100%; } }
 
 .form__input {
   width: 100%;
@@ -800,6 +809,9 @@ body {
   padding: 10px 10px;
   background-color: #DD3C39;
   border: none;
-  border-radius: 5px; }
+  border-radius: 5px;
+  opacity: 0.9; }
+  .form__btn:hover {
+    opacity: 1; }
   .form__btn--reset {
     margin-bottom: 15px; }

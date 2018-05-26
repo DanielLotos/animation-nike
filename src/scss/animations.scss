@@ -27,3 +27,19 @@
     transform: scale(1) rotateY(360deg);
   }
 }
+
+//animations for icons
+@keyframes iconScale {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0);
+  }
+  75% {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}

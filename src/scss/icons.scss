@@ -5,6 +5,9 @@
   width: 170%;
   height: 170%;
   opacity: 0.15;
+  @include screen-style(phone) {
+    display: none;
+  };
   &--scale {
     animation: iconScale 2s forwards;
     animation-iteration-count: 1;

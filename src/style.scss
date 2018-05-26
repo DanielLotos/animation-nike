@@ -8,6 +8,9 @@ body {
   display: flex;
   align-items: center;
   height: 100vh;
+  @include screen-style(phone) {
+    height: 100%;
+  };
 }
 
 .wrapper {
@@ -16,12 +19,21 @@ body {
   margin: 0 auto;
   padding: 85px 80px;
   align-items: center;
+  @include screen-style(phone) {
+    padding: 4vmin;
+    flex-wrap: wrap;
+  };
 }
 
 //header block (left column)
 .header {
   min-width: 273px;
   margin-right: 75px;
+  @include screen-style(phone) {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  };
   &__link {
     display: inline-block;
     width: 98px;
@@ -34,15 +46,22 @@ body {
   &__title {
     margin: 0;
     max-width: 169px;
+    @include screen-style(phone) {
+      margin-bottom: 2vmin;
+      max-width: 100%;
+    };
   }
   &__subtitle {
     margin-bottom: 15px;
   }
   &__wrapper {
     display: flex;
-    max-width: 65%;
+    max-width: 175px;
     margin-bottom: 28px;
     flex-direction: column;
+    @include screen-style(phone) {
+      margin: 0 auto;
+    };
   }
   &__phone {
     margin-bottom: 10px;
@@ -51,10 +70,12 @@ body {
 }
 //end header
 
-//login or reset password block (right column)
-
+//login and reset password block (right column)
 .login-form__wrapper {
   perspective: 1000px;
+  @include screen-style(phone) {
+    width: 100%;
+  };
 }
 
 .login-form__flipper {

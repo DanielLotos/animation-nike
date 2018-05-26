@@ -5,10 +5,12 @@ const formReset = document.querySelector('.login-form--reset');
 const formFlipper = document.querySelector('.login-form__flipper');
 const iconsWrapper = document.querySelector('.icons');
 
+//function for setTimeout remove class
 function removeClass () {
   iconsWrapper.classList.remove('icons--scale');
 }
 
+//btn event for Login form
 btnInvertLogin.addEventListener('click', function (event) {
   event.preventDefault ? event.preventDefault() : (event.returnValue = false);
   formFlipper.classList.remove('login-form__flipper--unflip');
@@ -17,6 +19,7 @@ btnInvertLogin.addEventListener('click', function (event) {
   setTimeout(removeClass, 2000);
 });
 
+//btn event for Reset form
 btnInvertReset.addEventListener('click', function (event) {
   event.preventDefault ? event.preventDefault() : (event.returnValue = false);
   formFlipper.classList.remove('login-form__flipper--flip');

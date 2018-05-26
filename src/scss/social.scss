@@ -1,3 +1,9 @@
+.social {
+  @include screen-style(phone) {
+    text-align: center;
+    margin-bottom: 4vmin;
+  };
+}
 .social__link {
   margin: 0 7px;
   svg {

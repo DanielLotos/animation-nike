@@ -91,7 +91,7 @@ body {
   transform-style: preserve-3d;
   transform: rotateY(360deg);
   @include screen-style(phone) {
-    margin-bottom: 4vmin;
+    margin-bottom: 8vmin;
   };
   //animation login to reset password
   &--flip {

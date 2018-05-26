@@ -761,7 +761,7 @@ body {
           transform: rotateY(360deg); }
   @media only screen and (min-width: 320px) and (max-width: 799px) {
     .login-form__flipper {
-      margin-bottom: 4vmin; } }
+      margin-bottom: 8vmin; } }
   .login-form__flipper--flip {
     -webkit-animation: scaling 1.5s forwards;
             animation: scaling 1.5s forwards;

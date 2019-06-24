@@ -13,7 +13,7 @@
 
 ## Рабочая версия:
 
-[Опробовать поведение элементов](https://daniellotos.github.io/testPage/dist/index.html)
+[Опробовать поведение элементов](https://daniellotos.github.io/animation-nike/dist/index.html)
 
 
 ## Лог изменений:
